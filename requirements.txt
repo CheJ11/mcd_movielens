@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+networkx
+scikit-learn
+scikit-surprise
