@@ -1,0 +1,14 @@
+1. Datos
+   99,693 valoraciones, 943 usuarios, 1,664 películas
+
+2. Validación cruzada (5 particiones, media por partición)
+   modelo                    RMSE  ± desv     MAE  entren. (s)  pred. (s)
+   SVD                     0.9358  0.0063  0.7370          0.6        0.1
+   Baseline                0.9443  0.0056  0.7486          0.1        0.1
+   KNN ítem-ítem           0.9741  0.0059  0.7693          0.4        1.6
+   KNN usuario-usuario     0.9789  0.0033  0.7732          0.2        1.5
+
+   Mejora de RMSE respecto al Baseline:
+   SVD                      0.89%
+   KNN ítem-ítem           -3.16%
+   KNN usuario-usuario     -3.67%
