@@ -1,0 +1,40 @@
+1. SVD: 5 mejores combinaciones de 24
+   n_factors  n_epochs  lr_all  reg_all     RMSE
+         100        30    0.01      0.1   0.9119
+         150        30    0.01      0.1   0.9124
+          50        30    0.01      0.1   0.9137
+         150        20    0.01      0.1   0.9195
+         100        20    0.01      0.1   0.9199
+
+2. KNN ítem-ítem: RMSE por k y medida de similitud
+   similitud  cosine     msd  pearson_baseline
+   k                                          
+   20         1.0477  0.9825            0.9949
+   40         1.0264  0.9741            0.9921
+   60         1.0231  0.9767            0.9925
+   80         1.0242  0.9815            0.9932
+
+3. Comparación (RMSE, mismas 5 particiones)
+   modelo            por defecto  optimizado   mejora   mejores parámetros
+   SVD                    0.9358      0.9119    2.56%   {'n_factors': 100, 'n_epochs': 30, 'lr_all': 0.01, 'reg_all': 0.1}
+   KNN ítem-ítem          0.9741      0.9741    0.00%   {'k': 40, 'sim_options': {'name': 'msd', 'user_based': False}}
+   Baseline               0.9443
+
+4. Recomendaciones para el usuario 1 (modelo: SVD optimizado)
+   Ha valorado 271 películas; 80 con 5 estrellas. Algunas de ellas:
+      Star Wars (1977)
+      Contact (1997)
+      Fargo (1996)
+      Return of the Jedi (1983)
+      Toy Story (1995)
+      Raiders of the Lost Ark (1981)
+      Godfather, The (1972)
+      Empire Strikes Back, The (1980)
+
+   Películas candidatas (no vistas, con >= 20 valoraciones): 679
+   Top 5 recomendadas:
+   4.80  Close Shave, A (1995)  (Animation, Comedy, Thriller; 112 val., media 4.49)
+   4.59  Casablanca (1942)  (Drama, Romance, War; 243 val., media 4.46)
+   4.59  Lawrence of Arabia (1962)  (Adventure, War; 173 val., media 4.23)
+   4.56  Third Man, The (1949)  (Mystery, Thriller; 72 val., media 4.33)
+   4.54  Secrets & Lies (1996)  (Drama; 162 val., media 4.26)
