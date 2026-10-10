@@ -34,37 +34,39 @@
    Substance of Fire, The (1996): [711, 1658]
    That Darn Cat! (1997): [878, 1003]
    Ulee's Gold (1997): [297, 303]
+   Valoraciones eliminadas por duplicado: 307
+   Resultado: 1,664 películas y 99,693 valoraciones
 
 5. Matriz usuario-película
-   Usuarios: 943   Películas valoradas: 1,682
-   Densidad: 0.0630  (dispersión: 93.70%)
-   Valoraciones por usuario:  mín 20, mediana 65, máx 737
+   Usuarios: 943   Películas valoradas: 1,664
+   Densidad: 0.0635  (dispersión: 93.65%)
+   Valoraciones por usuario:  mín 19, mediana 64, máx 736
    Valoraciones por película: mín 1, mediana 27, máx 583
-   Películas con 1 sola valoración: 141
+   Películas con 1 sola valoración: 135
 
    Distribución de ratings:
-   1:  6,110 (6.1%)
-   2: 11,370 (11.4%)
-   3: 27,145 (27.1%)
-   4: 34,174 (34.2%)
-   5: 21,201 (21.2%)
+   1:  6,085 (6.1%)
+   2: 11,336 (11.4%)
+   3: 27,068 (27.2%)
+   4: 34,063 (34.2%)
+   5: 21,141 (21.2%)
    Media: 3.530
 
 6. Periodo de las valoraciones: 20/09/1997 – 22/04/1998
 
    Películas por género (una película puede tener varios):
-   Drama         725
-   Comedy        505
-   Action        251
-   Thriller      251
-   Romance       247
-   Adventure     135
-   Children's    122
-   Crime         109
-   Sci-Fi        101
-   Horror         92
+   Drama         716
+   Comedy        502
+   Action        249
+   Thriller      248
+   Romance       244
+   Adventure     133
+   Children's    120
+   Crime         107
+   Sci-Fi        100
+   Horror         90
    War            71
-   Mystery        61
+   Mystery        60
    Musical        56
    Documentary    50
    Animation      42

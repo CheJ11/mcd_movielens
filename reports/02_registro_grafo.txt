@@ -1,0 +1,46 @@
+1. Grafo bipartito
+   Nodos: 2,607 (943 usuarios + 1,664 películas)
+   Aristas: 99,693
+   ¿Bipartito?: True
+   Componentes conexas: 1
+
+2. Centralidad de grado
+   Top 5 usuarios (más películas valoradas):
+    usuario  películas  centralidad  rating medio
+        405        736        0.442          1.84
+        655        678        0.407          2.90
+         13        632        0.380          3.10
+        450        538        0.323          3.86
+        276        516        0.310          3.47
+
+   Top 10 películas (más valoradas):
+    583  0.618  Star Wars (1977)
+    509  0.540  Contact (1997)
+    508  0.539  Fargo (1996)
+    507  0.538  Return of the Jedi (1983)
+    485  0.514  Liar Liar (1997)
+    481  0.510  English Patient, The (1996)
+    478  0.507  Scream (1996)
+    452  0.479  Toy Story (1995)
+    431  0.457  Air Force One (1997)
+    429  0.455  Independence Day (ID4) (1996)
+
+   Grado de usuarios:  mediana 64, media 105.7, máx 736
+   Grado de películas: mediana 27, media 59.9, máx 583
+
+3. Centralidad de intermediación
+   Top 10 películas:
+   0.0159  (481 val.)  English Patient, The (1996)
+   0.0157  (478 val.)  Scream (1996)
+   0.0138  (485 val.)  Liar Liar (1997)
+   0.0138  (509 val.)  Contact (1997)
+   0.0125  (583 val.)  Star Wars (1977)
+   0.0114  (431 val.)  Air Force One (1997)
+   0.0107  (508 val.)  Fargo (1996)
+   0.0091  (350 val.)  Titanic (1997)   <- no está en el top 10 por grado
+   0.0088  (507 val.)  Return of the Jedi (1983)
+   0.0075  (297 val.)  L.A. Confidential (1997)   <- no está en el top 10 por grado
+
+4. Coeficiente de agrupamiento
+   Triángulos en el grafo: 0 -> el coeficiente clásico es 0
+   Agrupamiento bipartito medio: usuarios 0.089, películas 0.062

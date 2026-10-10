@@ -6,6 +6,7 @@ DATA_DIR = ROOT / "data" / "raw" / "ml-100k"
 PROCESSED = ROOT / "data" / "processed"
 REPORTS = ROOT / "reports"
 PROCESSED.mkdir(parents=True, exist_ok=True)
+REPORTS.mkdir(exist_ok=True)
 
 registro = []
 
@@ -55,6 +56,23 @@ repetidos = ids_por_titulo[ids_por_titulo.str.len() > 1]
 log(f"   Títulos con más de un item_id: {len(repetidos)}")
 for titulo, ids in repetidos.items():
     log(f"   {titulo}: {ids}")
+
+# Son la misma película con dos códigos: se reemplaza el item_id mayor por el menor
+mapa = {}
+for ids in repetidos:
+    ids = sorted(ids)
+    mapa[ids[1]] = ids[0]
+
+valoraciones["item_id"] = valoraciones["item_id"].replace(mapa)
+peliculas = peliculas[~peliculas["item_id"].isin(mapa.keys())]
+
+# Si un usuario valoró las dos versiones, se conserva su valoración más reciente
+antes = len(valoraciones)
+valoraciones = valoraciones.sort_values("timestamp")
+valoraciones = valoraciones.drop_duplicates(["user_id", "item_id"], keep="last")
+valoraciones = valoraciones.sort_values(["user_id", "item_id"])
+log(f"   Valoraciones eliminadas por duplicado: {antes - len(valoraciones)}")
+log(f"   Resultado: {len(peliculas):,} películas y {len(valoraciones):,} valoraciones")
 
 # 5. Descripción de la matriz usuario-película
 n_usuarios = valoraciones["user_id"].nunique()
