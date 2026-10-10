@@ -1,0 +1,14 @@
+1. Descarga
+   Descargando https://files.grouplens.org/datasets/movielens/ml-100k.zip
+   Tamaño del zip: 4.92 MB
+
+2. Extracción
+   Zip íntegro, 24 entradas
+   Extraído en data\raw\ml-100k
+
+3. Archivos que usa el taller (solo lectura)
+   u.data      1979.2 kB
+   u.item       236.3 kB
+   u.genre        0.2 kB
+   u.user        22.6 kB
+   README         6.8 kB

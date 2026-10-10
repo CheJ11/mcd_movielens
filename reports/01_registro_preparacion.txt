@@ -1,0 +1,76 @@
+1. Lectura
+   valoraciones: 100,000 filas x 4 columnas
+   peliculas:    1,682 filas x 24 columnas
+   géneros:      19
+
+2. Valores nulos
+   valoraciones: 0
+   peliculas.fecha_estreno: 1
+   peliculas.fecha_video: 1682
+   peliculas.imdb_url: 3
+
+3. Integridad
+   Pares (usuario, película) repetidos: 0
+   Valoraciones de películas que no están en u.item: 0
+   Escala de rating: [1, 2, 3, 4, 5]
+
+4. Títulos repetidos
+   Títulos con más de un item_id: 18
+   Body Snatchers (1993): [573, 670]
+   Butcher Boy, The (1998): [1645, 1650]
+   Chairman of the Board (1998): [1234, 1654]
+   Chasing Amy (1997): [246, 268]
+   Deceiver (1997): [309, 1606]
+   Designated Mourner, The (1997): [1256, 1257]
+   Desperate Measures (1998): [329, 348]
+   Fly Away Home (1996): [304, 500]
+   Hugo Pool (1997): [1175, 1617]
+   Hurricane Streets (1998): [1395, 1607]
+   Ice Storm, The (1997): [305, 865]
+   Kull the Conqueror (1997): [266, 680]
+   Money Talks (1997): [876, 881]
+   Nightwatch (1997): [1477, 1625]
+   Sliding Doors (1998): [1429, 1680]
+   Substance of Fire, The (1996): [711, 1658]
+   That Darn Cat! (1997): [878, 1003]
+   Ulee's Gold (1997): [297, 303]
+
+5. Matriz usuario-película
+   Usuarios: 943   Películas valoradas: 1,682
+   Densidad: 0.0630  (dispersión: 93.70%)
+   Valoraciones por usuario:  mín 20, mediana 65, máx 737
+   Valoraciones por película: mín 1, mediana 27, máx 583
+   Películas con 1 sola valoración: 141
+
+   Distribución de ratings:
+   1:  6,110 (6.1%)
+   2: 11,370 (11.4%)
+   3: 27,145 (27.1%)
+   4: 34,174 (34.2%)
+   5: 21,201 (21.2%)
+   Media: 3.530
+
+6. Periodo de las valoraciones: 20/09/1997 – 22/04/1998
+
+   Películas por género (una película puede tener varios):
+   Drama         725
+   Comedy        505
+   Action        251
+   Thriller      251
+   Romance       247
+   Adventure     135
+   Children's    122
+   Crime         109
+   Sci-Fi        101
+   Horror         92
+   War            71
+   Mystery        61
+   Musical        56
+   Documentary    50
+   Animation      42
+   Western        27
+   Film-Noir      24
+   Fantasy        22
+   unknown         2
+
+Guardado: data/processed/valoraciones.csv y data/processed/peliculas.csv
