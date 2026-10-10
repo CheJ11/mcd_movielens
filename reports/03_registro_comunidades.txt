@@ -1,0 +1,83 @@
+1. Subgrafo de películas
+   Películas: 50 (mínimo 276 valoraciones)
+   Proyección completa: 1225 aristas
+   Conservando los 3 vecinos más similares: 122 aristas, 1 componente(s)
+
+2. Girvan-Newman
+    comunidades  modularidad
+              2        0.231
+              3        0.565
+              4        0.589
+              5        0.563
+              6        0.549
+              7        0.532
+              8        0.515
+              9        0.500
+             10        0.483
+             11        0.473
+             12        0.466
+             13        0.454
+             14        0.448
+             15        0.437
+             16        0.426
+   Partición elegida: 4 comunidades (modularidad 0.589)
+
+3. Comunidades
+
+   Comunidad 1 (18 películas). Géneros principales: Action 50%, Adventure 44%, Drama 39%
+      583  Star Wars (1977)
+      508  Fargo (1996)
+      507  Return of the Jedi (1983)
+      452  Toy Story (1995)
+      429  Independence Day (ID4) (1996)
+      413  Godfather, The (1972)
+      392  Twelve Monkeys (1995)
+      384  Jerry Maguire (1996)
+      378  Rock, The (1996)
+      365  Star Trek: First Contact (1996)
+      344  Mission: Impossible (1996)
+      326  Willy Wonka and the Chocolate Factory (1971)
+      303  Men in Black (1997)
+      299  Dead Man Walking (1995)
+      298  Leaving Las Vegas (1995)
+      293  Mr. Holland's Opus (1995)
+      293  Twister (1996)
+      293  Birdcage, The (1996)
+
+   Comunidad 2 (16 películas). Géneros principales: Drama 50%, Comedy 38%, Action 38%
+      420  Raiders of the Lost Ark (1981)
+      394  Pulp Fiction (1994)
+      390  Silence of the Lambs, The (1991)
+      367  Empire Strikes Back, The (1980)
+      350  Back to the Future (1985)
+      331  Indiana Jones and the Last Crusade (1989)
+      324  Princess Bride, The (1987)
+      321  Forrest Gump (1994)
+      316  Monty Python and the Holy Grail (1974)
+      300  E.T. the Extra-Terrestrial (1982)
+      298  Schindler's List (1993)
+      297  Braveheart (1995)
+      290  When Harry Met Sally... (1989)
+      283  Shawshank Redemption, The (1994)
+      280  Groundhog Day (1993)
+      276  Apollo 13 (1995)
+
+   Comunidad 3 (10 películas). Géneros principales: Thriller 50%, Romance 40%, Action 40%
+      509  Contact (1997)
+      485  Liar Liar (1997)
+      481  English Patient, The (1996)
+      478  Scream (1996)
+      431  Air Force One (1997)
+      350  Titanic (1997)
+      316  Saint, The (1997)
+      315  Full Monty, The (1997)
+      297  L.A. Confidential (1997)
+      295  Conspiracy Theory (1997)
+
+   Comunidad 4 (6 películas). Géneros principales: Action 100%, Thriller 83%, Sci-Fi 67%
+      336  Fugitive, The (1993)
+      301  Terminator, The (1984)
+      295  Terminator 2: Judgment Day (1991)
+      291  Alien (1979)
+      284  Aliens (1986)
+      280  Jaws (1975)
